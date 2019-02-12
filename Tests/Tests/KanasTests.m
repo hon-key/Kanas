@@ -20,11 +20,12 @@
 //  SOFTWARE.
 
 #import "KASTestCase.h"
-#import "KASTe.h"
+#import <Kanas/KASAnnotationRemover.h>
 
 @interface KanasTests : KASTestCase
 
 @end
+
 
 @implementation KanasTests
 
@@ -33,9 +34,18 @@
 }
 
 #pragma mark -
-
 - (void)testExample {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"req" ofType:@"kas"];
+    NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+    KASAnnotationRemover *anontationRemover = [[KASAnnotationRemover alloc] initWithString:string];
+    NSString *newStr = [anontationRemover removeAnnontation];
+    [newStr enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+        NSLog(@"%@",line);
+    }];
 
+    NSLog(@"%@",path);
 }
 
 

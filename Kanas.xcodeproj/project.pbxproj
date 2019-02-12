@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		7D5F7177B9D5E51CB9D168A4 /* libPods-Kanas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DAD285DF30AEF7938E9F6A /* libPods-Kanas.a */; };
 		87D0A2F76FE39C9AECBBDC84 /* libPods-KanasTests iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDD049FB83E8332E76AFDCC /* libPods-KanasTests iOS.a */; };
+		929646FB21A3B3E3000B5FB0 /* req.kas in Resources */ = {isa = PBXBuildFile; fileRef = 929646F921A3B10B000B5FB0 /* req.kas */; };
+		9296470421A3BA82000B5FB0 /* KASAnnotationRemover.h in Headers */ = {isa = PBXBuildFile; fileRef = 9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9296470521A3BA82000B5FB0 /* KASAnnotationRemover.m in Sources */ = {isa = PBXBuildFile; fileRef = 9296470321A3BA82000B5FB0 /* KASAnnotationRemover.m */; };
+		92A7339B22126DAD0046B94F /* KASFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A7339922126DAD0046B94F /* KASFile.h */; };
+		92A7339C22126DAD0046B94F /* KASFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A7339A22126DAD0046B94F /* KASFile.m */; };
+		92A7339F22126F210046B94F /* KASRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A7339D22126F210046B94F /* KASRequest.h */; };
+		92A733A022126F210046B94F /* KASRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A7339E22126F210046B94F /* KASRequest.m */; };
+		92A733A32212A9270046B94F /* KASParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A733A12212A9270046B94F /* KASParam.h */; };
+		92A733A42212A9270046B94F /* KASParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A733A22212A9270046B94F /* KASParam.m */; };
 		92B75C03215B1BAF002D6AC3 /* Kanas.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B75C01215B1BAF002D6AC3 /* Kanas.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92B75C18215B201A002D6AC3 /* Kanas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B75BFE215B1BAF002D6AC3 /* Kanas.framework */; };
 		92B75C20215B26A5002D6AC3 /* KASTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C1F215B26A5002D6AC3 /* KASTestCase.m */; };
 		92B75C24215B29F9002D6AC3 /* KanasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C23215B29F9002D6AC3 /* KanasTests.m */; };
-		92B75C28215B3220002D6AC3 /* KASTe.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B75C26215B3220002D6AC3 /* KASTe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92B75C29215B3220002D6AC3 /* KASTe.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C27215B3220002D6AC3 /* KASTe.m */; };
+		92CE126421C3B00F009DAD6F /* KASInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CE126221C3B00F009DAD6F /* KASInterpreter.h */; };
+		92CE126521C3B00F009DAD6F /* KASInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE126321C3B00F009DAD6F /* KASInterpreter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,15 @@
 		408A8EB981EEB31D30055F66 /* Pods-Kanas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kanas/Pods-Kanas.debug.xcconfig"; sourceTree = "<group>"; };
 		40DAD285DF30AEF7938E9F6A /* libPods-Kanas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50116321BDE848E82193C077 /* Pods-KanasTests iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanasTests iOS/Pods-KanasTests iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		929646F921A3B10B000B5FB0 /* req.kas */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = req.kas; sourceTree = "<group>"; };
+		9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASAnnotationRemover.h; sourceTree = "<group>"; };
+		9296470321A3BA82000B5FB0 /* KASAnnotationRemover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASAnnotationRemover.m; sourceTree = "<group>"; };
+		92A7339922126DAD0046B94F /* KASFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASFile.h; sourceTree = "<group>"; };
+		92A7339A22126DAD0046B94F /* KASFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASFile.m; sourceTree = "<group>"; };
+		92A7339D22126F210046B94F /* KASRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASRequest.h; sourceTree = "<group>"; };
+		92A7339E22126F210046B94F /* KASRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASRequest.m; sourceTree = "<group>"; };
+		92A733A12212A9270046B94F /* KASParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASParam.h; sourceTree = "<group>"; };
+		92A733A22212A9270046B94F /* KASParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASParam.m; sourceTree = "<group>"; };
 		92B75BFE215B1BAF002D6AC3 /* Kanas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B75C01215B1BAF002D6AC3 /* Kanas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kanas.h; sourceTree = "<group>"; };
 		92B75C0A215B1C80002D6AC3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = framework/Info.plist; sourceTree = "<group>"; };
@@ -39,8 +57,8 @@
 		92B75C1E215B26A5002D6AC3 /* KASTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASTestCase.h; sourceTree = "<group>"; };
 		92B75C1F215B26A5002D6AC3 /* KASTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASTestCase.m; sourceTree = "<group>"; };
 		92B75C23215B29F9002D6AC3 /* KanasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanasTests.m; sourceTree = "<group>"; };
-		92B75C26215B3220002D6AC3 /* KASTe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASTe.h; sourceTree = "<group>"; };
-		92B75C27215B3220002D6AC3 /* KASTe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASTe.m; sourceTree = "<group>"; };
+		92CE126221C3B00F009DAD6F /* KASInterpreter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASInterpreter.h; sourceTree = "<group>"; };
+		92CE126321C3B00F009DAD6F /* KASInterpreter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASInterpreter.m; sourceTree = "<group>"; };
 		9FDD049FB83E8332E76AFDCC /* libPods-KanasTests iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanasTests iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B665C63DC127D5AC9C25F4E0 /* Pods-KanasTests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanasTests iOS/Pods-KanasTests iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +104,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		92058984220518F6006FAADA /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				92A7339922126DAD0046B94F /* KASFile.h */,
+				92A7339A22126DAD0046B94F /* KASFile.m */,
+				92A7339D22126F210046B94F /* KASRequest.h */,
+				92A7339E22126F210046B94F /* KASRequest.m */,
+				92A733A12212A9270046B94F /* KASParam.h */,
+				92A733A22212A9270046B94F /* KASParam.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		929646FD21A3B7EF000B5FB0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		92B75BF4215B1BAF002D6AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +148,10 @@
 		92B75C00215B1BAF002D6AC3 /* Kanas */ = {
 			isa = PBXGroup;
 			children = (
+				92CE126121C3AEC5009DAD6F /* Core */,
+				92058984220518F6006FAADA /* Object */,
+				929646FD21A3B7EF000B5FB0 /* Category */,
 				92B75C01215B1BAF002D6AC3 /* Kanas.h */,
-				92B75C26215B3220002D6AC3 /* KASTe.h */,
-				92B75C27215B3220002D6AC3 /* KASTe.m */,
 			);
 			path = Kanas;
 			sourceTree = "<group>";
@@ -137,6 +176,7 @@
 		92B75C0D215B1F14002D6AC3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				929646F921A3B10B000B5FB0 /* req.kas */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,6 +199,17 @@
 			name = "Kanas Tests";
 			sourceTree = "<group>";
 		};
+		92CE126121C3AEC5009DAD6F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */,
+				9296470321A3BA82000B5FB0 /* KASAnnotationRemover.m */,
+				92CE126221C3B00F009DAD6F /* KASInterpreter.h */,
+				92CE126321C3B00F009DAD6F /* KASInterpreter.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -166,8 +217,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9296470421A3BA82000B5FB0 /* KASAnnotationRemover.h in Headers */,
 				92B75C03215B1BAF002D6AC3 /* Kanas.h in Headers */,
-				92B75C28215B3220002D6AC3 /* KASTe.h in Headers */,
+				92A7339F22126F210046B94F /* KASRequest.h in Headers */,
+				92A7339B22126DAD0046B94F /* KASFile.h in Headers */,
+				92A733A32212A9270046B94F /* KASParam.h in Headers */,
+				92CE126421C3B00F009DAD6F /* KASInterpreter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929646FB21A3B3E3000B5FB0 /* req.kas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +364,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B75C29215B3220002D6AC3 /* KASTe.m in Sources */,
+				92A733A42212A9270046B94F /* KASParam.m in Sources */,
+				92A7339C22126DAD0046B94F /* KASFile.m in Sources */,
+				92CE126521C3B00F009DAD6F /* KASInterpreter.m in Sources */,
+				9296470521A3BA82000B5FB0 /* KASAnnotationRemover.m in Sources */,
+				92A733A022126F210046B94F /* KASRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +533,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -499,7 +559,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};

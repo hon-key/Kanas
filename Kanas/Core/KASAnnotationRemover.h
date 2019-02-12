@@ -1,4 +1,4 @@
-//  Kanas.h
+//  KanasTests.h
 //  Copyright (c) 2018 HJ-Cai
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,22 +19,23 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-//! Project version number for Kanas.
-FOUNDATION_EXPORT double KanasVersionNumber;
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version string for Kanas.
-FOUNDATION_EXPORT const unsigned char KanasVersionString[];
+@interface KASAnnotationRemover : NSObject
 
-// In this header, you should import all the public headers of your framework using statements like #import <Kanas/PublicHeader.h>
+@property (nonatomic,copy,readonly,nonnull) NSString *string;
 
-#ifndef _KANAS_
-#define _KANAS_
+@property (nonatomic,strong,nullable) NSError *error;
 
-#if TARGET_OS_IOS
-#import <Kanas/KASAnnotationRemover.h>
-#endif
+- (instancetype)init NS_UNAVAILABLE;
 
+- (instancetype)initWithString:(nonnull NSString *)string;
 
-#endif
+- (NSString *)removeAnnontation;
+
+@end
+
+NS_ASSUME_NONNULL_END
+
