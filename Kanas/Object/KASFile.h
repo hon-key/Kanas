@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KASRequest.h"
+#import "KASParam.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong,readonly,nonnull) NSDictionary<NSString *,NSString *> *keyValues;
 
 @property (nonatomic,strong,readonly,nonnull) NSDictionary<NSString *,NSString *> *header;
+
+@property (nonatomic,strong,readonly,nonnull) NSArray<KASParam *> *request;
+
+@property (nonatomic,strong,readonly,nonnull) NSArray<KASParam *> *response;
 
 @end
 

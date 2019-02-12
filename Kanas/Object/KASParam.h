@@ -34,26 +34,8 @@ FOUNDATION_EXPORT KASParamType const KASEnumArr;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-+ (instancetype)paramWithAlias:(NSString *)alias type:(KASParamType)type key:(NSString *)key additional:(nullable id)additional;
+- (instancetype)initWithAlias:(NSString *)alias type:(KASParamType)type key:(NSString *)key additional:(nullable id)additional;
 
-- (NSString *)cacheKey;
-+ (UInt64)totalBytes;
-
-@end
-
-@interface KASParamCache : NSObject
-
-@property (nonatomic,assign) UInt64 memoryCapacity;
-
-@property (nonatomic, assign) UInt64 preferredMemoryUsageAfterPurge;
-
-@property (nonatomic, assign, readonly) UInt64 memoryUsage;
-
-+ (instancetype)cache;
-
-- (void)cacheParam:(KASParam *)param;
-
-- (nullable KASParam *)paramWithKey:(NSString *)key;
 
 @end
 
