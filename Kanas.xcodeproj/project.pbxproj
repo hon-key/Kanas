@@ -104,7 +104,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		92058984220518F6006FAADA /* Object */ = {
+		92058984220518F6006FAADA /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				92A7339922126DAD0046B94F /* KASFile.h */,
@@ -114,7 +114,7 @@
 				92A733A12212A9270046B94F /* KASParam.h */,
 				92A733A22212A9270046B94F /* KASParam.m */,
 			);
-			path = Object;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		929646FD21A3B7EF000B5FB0 /* Category */ = {
@@ -122,6 +122,27 @@
 			children = (
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		92A733A52213A0460046B94F /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		92A733B62213FFA70046B94F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		92A733B7221400B70046B94F /* Task */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 		92B75BF4215B1BAF002D6AC3 = {
@@ -148,8 +169,11 @@
 		92B75C00215B1BAF002D6AC3 /* Kanas */ = {
 			isa = PBXGroup;
 			children = (
-				92CE126121C3AEC5009DAD6F /* Core */,
-				92058984220518F6006FAADA /* Object */,
+				92A733B7221400B70046B94F /* Task */,
+				92CE126121C3AEC5009DAD6F /* Interpreter */,
+				92058984220518F6006FAADA /* Core */,
+				92A733A52213A0460046B94F /* Cache */,
+				92A733B62213FFA70046B94F /* Networking */,
 				929646FD21A3B7EF000B5FB0 /* Category */,
 				92B75C01215B1BAF002D6AC3 /* Kanas.h */,
 			);
@@ -199,7 +223,7 @@
 			name = "Kanas Tests";
 			sourceTree = "<group>";
 		};
-		92CE126121C3AEC5009DAD6F /* Core */ = {
+		92CE126121C3AEC5009DAD6F /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
 				9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */,
@@ -207,7 +231,7 @@
 				92CE126221C3B00F009DAD6F /* KASInterpreter.h */,
 				92CE126321C3B00F009DAD6F /* KASInterpreter.m */,
 			);
-			path = Core;
+			path = Interpreter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

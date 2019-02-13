@@ -9,5 +9,10 @@
 #import "KASFile.h"
 
 @implementation KASFile
-
+- (instancetype)initWithContentsFile:(NSString *)filePathString asIndex:(BOOL)asIndex {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
 @end
