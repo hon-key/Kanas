@@ -89,7 +89,6 @@ static inline KASInterpreterLinkList * kas_interpreter_stack_pop(KASInterpreterL
     __block KASInterpreterLinkList *linkList = NULL;
     __block KASInterpreterKeyValue *data = NULL;
     [string enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
-//        NSLog(@"%@",line);
         if (linkList == NULL) {
             if ([line isEqualToString:KASSymbolKanas]) {
                 linkList = kas_interpreter_stack_push(linkList, KASSymbolKanas);
@@ -150,11 +149,8 @@ static inline KASInterpreterLinkList * kas_interpreter_stack_pop(KASInterpreterL
         if (linkList) {
             block(linkList,data);
             if (data) {
-                if ([data->keyType isEqualToString:KASEnum] ||
-                    [data->keyType isEqualToString:KASDict] ||
-                    [data->keyType isEqualToString:KASEnumArr] ||
-                    [data->keyType isEqualToString:KASDictArr]) {
-                    linkList = kas_interpreter_stack_push(linkList, KASSymbolResponse);
+                if ([data->keyType containsString:@"{"]) {
+                    linkList = kas_interpreter_stack_push(linkList, data->symbol);
                 }
                 free(data);
                 data = NULL;
