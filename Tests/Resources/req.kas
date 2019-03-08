@@ -6,55 +6,58 @@
   Copyright © 2018 CAI. All rights reserved.
 */
 
-Kanas {
-    defaultBase = 1
+- kanas {
+    defaultBase = "1"
     base.1 = "http://pos.lepass.cn/"
     base.2 = "https://pospre.yeahka.com/"
     base.3 = "https://jh.yeahka.com/"
     header = {
-        Method = POST
-        Content-Type = application/json
-        Accept = application/json
+        Method = "POST"
+        Content-Type = "application/json"
+        Accept = "application/json"
     }
     request = {
-        "登录名": string = "loginUserName"
-        "会话号": string = "sessionId"
+        登录名 = "loginUserName" : string
+        会话号 = "sessionId" : string
     }
     response = {
-        "错误码": string = "error_code"
-        "错误原因": string = "error_msg"
+        错误码 = "error_code" : string
+        错误原因 = "error_msg" : string
     }
 }
 
-- "交易统计" = "merchant/statistics-trans" {
-    
-}
-
-- "交易细节" = "merchant/trans-detail" {
+- interface {
+    url = "merchant/trans-detail"
+    alias = "交易细节"
     header = {
-        Content-Type = application/x-www-form-urlencoded
+        Content-Type = "application/x-www-form-urlencoded"
     }
     request = { // string/number/dict/bool/enum
-        "商户号": string = "merchantId"
-        "流水号": string = "transId"
+        商户号 = "merchantId" : string
+        流水号: string = "transId"
     }
     response = {
-        "列表": [dict] = "data" {
-            "是否T0": bool = "t0Flag"         
-            "交易金额": string = "amount"
-            "支付方式": string = "payTypeStr"
-            "支付类型": enum = "payType" {
-                "支付宝支付" = 1
-                "微信支付" = 2
-                "银联闪付" = 3
-                "其他" = 4
+        列表 = "data" : [dict] {
+            是否T0 = "t0Flag" : bool
+            交易金额 = "amount" : string
+            支付方式 = "payTypeStr" : string
+            支付类型 = "payType" : enum {
+                支付宝支付 = "1"
+                微信支付 = "2"
+                银联闪付 = "3"
+                其他 = "4"
             }
-            "支付状态": string = "statusStr"
-            "商户号": string = "merchantId"
-            "订单号": string = "orderId"
-            "支付来源": string = "sourceType"
-            "商户全称": string = "fullName"
-            "状态": string = "status"
+            支付状态 = "statusStr" : string
+            商户号 = "merchantId" : string
+            订单号 = "orderId" : string
+            支付来源 = "sourceType" : string
+            商户全称 = "fullName" : string
+            状态 = "status" : string
         }
     }
+}
+
+- interface {
+    alias = "交易统计"
+    url = "merchant/statistics-trans"
 }

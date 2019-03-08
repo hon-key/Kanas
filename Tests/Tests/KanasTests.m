@@ -21,6 +21,7 @@
 
 #import "KASTestCase.h"
 #import <Kanas/KASAnnotationRemover.h>
+#import <Kanas/KASInterpreter.h>
 
 @interface KanasTests : KASTestCase
 
@@ -41,9 +42,16 @@
     
     KASAnnotationRemover *anontationRemover = [[KASAnnotationRemover alloc] initWithString:string];
     NSString *newStr = [anontationRemover removeAnnontation];
-    [newStr enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
-        NSLog(@"%@",line);
+    
+    [KASInterpreter.defaultInterpreter syncInterpretWithContentString:newStr options:0 interpretBlock:^(KASInterpreterLinkList * _Nonnull linkList, KASInterpreterKeyValue *const  _Nullable keyValue) {
+        if (keyValue) {
+            NSLog(@"%@ : %@ : %@",keyValue->key,keyValue->value,keyValue->keyType);
+        }
     }];
+    
+//    [newStr enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+//        NSLog(@"%@",line);
+//    }];
 
     NSLog(@"%@",path);
 }

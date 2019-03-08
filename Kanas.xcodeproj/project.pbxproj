@@ -22,7 +22,7 @@
 		92B75C18215B201A002D6AC3 /* Kanas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B75BFE215B1BAF002D6AC3 /* Kanas.framework */; };
 		92B75C20215B26A5002D6AC3 /* KASTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C1F215B26A5002D6AC3 /* KASTestCase.m */; };
 		92B75C24215B29F9002D6AC3 /* KanasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C23215B29F9002D6AC3 /* KanasTests.m */; };
-		92CE126421C3B00F009DAD6F /* KASInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CE126221C3B00F009DAD6F /* KASInterpreter.h */; };
+		92CE126421C3B00F009DAD6F /* KASInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CE126221C3B00F009DAD6F /* KASInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92CE126521C3B00F009DAD6F /* KASInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE126321C3B00F009DAD6F /* KASInterpreter.m */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +145,13 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
+		92A733B82214FBEB0046B94F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		92B75BF4215B1BAF002D6AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +176,7 @@
 		92B75C00215B1BAF002D6AC3 /* Kanas */ = {
 			isa = PBXGroup;
 			children = (
+				92A733B82214FBEB0046B94F /* Manager */,
 				92A733B7221400B70046B94F /* Task */,
 				92CE126121C3AEC5009DAD6F /* Interpreter */,
 				92058984220518F6006FAADA /* Core */,

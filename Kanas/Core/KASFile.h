@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong,readonly,nullable) NSArray<KASParam *> *defaultResponseParams;
 
-@property (nonatomic,strong,readonly,nullable) NSDictionary <NSString *,KASRequest *> *requests;
+@property (nonatomic,strong,readonly,nullable) NSDictionary<NSString *,KASRequest *> *requests;
 
 - (void)clear;
 

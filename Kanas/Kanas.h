@@ -34,6 +34,7 @@ FOUNDATION_EXPORT const unsigned char KanasVersionString[];
 
 #if TARGET_OS_IOS
 #import <Kanas/KASAnnotationRemover.h>
+#import <Kanas/KASInterpreter.h>
 #endif
 
 
