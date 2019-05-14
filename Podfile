@@ -5,7 +5,7 @@ target 'Kanas' do
 
 pod 'AFNetworking'
 
-  target 'KanasTests iOS' do
+  target 'KanasTests-iOS' do
      inherit! :search_paths
   end
 

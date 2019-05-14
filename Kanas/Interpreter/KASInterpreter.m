@@ -77,15 +77,6 @@ static inline KASInterpreterLinkList * kas_interpreter_stack_pop(KASInterpreterL
                                options:(KASInterpreterInterpretOptions)options
                         interpretBlock:(void (^)(KASInterpreterLinkList * _Nonnull, KASInterpreterKeyValue *const _Nullable))block {
 
-    [self syncInterpretWithContentString:string requestName:nil options:options interpretBlock:block];
-    
-}
-
-- (void)syncInterpretWithContentString:(NSString *)string
-                           requestName:(NSString *)requestName
-                               options:(KASInterpreterInterpretOptions)options
-                        interpretBlock:(void (^)(KASInterpreterLinkList * _Nonnull, KASInterpreterKeyValue *const _Nullable))block {
-    
     __block KASInterpreterLinkList *linkList = NULL;
     __block KASInterpreterKeyValue *data = NULL;
     [string enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
@@ -137,7 +128,7 @@ static inline KASInterpreterLinkList * kas_interpreter_stack_pop(KASInterpreterL
                     data->keyType = keyType;
                     data->symbol = line;
                 }else {
-                    NSLog(@"unkown key-value");
+                    NSLog(@"unkown key-value: %@",line);
                     *stop = YES;
                     return;
                 }
@@ -158,7 +149,6 @@ static inline KASInterpreterLinkList * kas_interpreter_stack_pop(KASInterpreterL
         }
         
     }];
-    
     
 }
 

@@ -34,7 +34,7 @@
     }
     request = { // string/number/dict/bool/enum
         商户号 = "merchantId" : string
-        流水号: string = "transId"
+        流水号 = "transId" : string
     }
     response = {
         列表 = "data" : [dict] {

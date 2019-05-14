@@ -43,11 +43,15 @@
     KASAnnotationRemover *anontationRemover = [[KASAnnotationRemover alloc] initWithString:string];
     NSString *newStr = [anontationRemover removeAnnontation];
     
+    __block NSString *currentSymbol = nil;
     [KASInterpreter.defaultInterpreter syncInterpretWithContentString:newStr options:0 interpretBlock:^(KASInterpreterLinkList * _Nonnull linkList, KASInterpreterKeyValue *const  _Nullable keyValue) {
-        NSLog(@"%@",linkList->symbol);
-//        if (keyValue) {
-//            NSLog(@"%@ : %@ : %@",keyValue->key,keyValue->value,keyValue->keyType);
-//        }
+        if (![currentSymbol isEqualToString:linkList->symbol]) {
+            currentSymbol = linkList->symbol;
+            NSLog(@"%@",linkList->symbol);
+        }
+        if (keyValue) {
+            NSLog(@"    %@ : %@ : %@",keyValue->key,keyValue->value,keyValue->keyType);
+        }
     }];
     
 

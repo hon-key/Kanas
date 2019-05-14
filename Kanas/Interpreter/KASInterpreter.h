@@ -57,10 +57,6 @@ typedef struct KASInterpreterKeyValue {
                                options:(KASInterpreterInterpretOptions)options
                         interpretBlock:(void(^)(KASInterpreterLinkList *linkList, KASInterpreterKeyValue * const _Nullable keyValue))block;
 
-- (void)syncInterpretWithContentString:(NSString *)string
-                           requestName:(nullable NSString *)requestName
-                               options:(KASInterpreterInterpretOptions)options
-                        interpretBlock:(void(^)(KASInterpreterLinkList *linkList,  KASInterpreterKeyValue * const _Nullable keyValue))block;
 
 @end
 

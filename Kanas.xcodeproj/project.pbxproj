@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D5F7177B9D5E51CB9D168A4 /* libPods-Kanas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DAD285DF30AEF7938E9F6A /* libPods-Kanas.a */; };
-		87D0A2F76FE39C9AECBBDC84 /* libPods-KanasTests iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDD049FB83E8332E76AFDCC /* libPods-KanasTests iOS.a */; };
+		92350C6A228A579300773299 /* KASTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C1F215B26A5002D6AC3 /* KASTestCase.m */; };
+		92350C6B228A579600773299 /* KanasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C23215B29F9002D6AC3 /* KanasTests.m */; };
 		929646FB21A3B3E3000B5FB0 /* req.kas in Resources */ = {isa = PBXBuildFile; fileRef = 929646F921A3B10B000B5FB0 /* req.kas */; };
 		9296470421A3BA82000B5FB0 /* KASAnnotationRemover.h in Headers */ = {isa = PBXBuildFile; fileRef = 9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9296470521A3BA82000B5FB0 /* KASAnnotationRemover.m in Sources */ = {isa = PBXBuildFile; fileRef = 9296470321A3BA82000B5FB0 /* KASAnnotationRemover.m */; };
@@ -20,10 +20,9 @@
 		92A733A42212A9270046B94F /* KASParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A733A22212A9270046B94F /* KASParam.m */; };
 		92B75C03215B1BAF002D6AC3 /* Kanas.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B75C01215B1BAF002D6AC3 /* Kanas.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92B75C18215B201A002D6AC3 /* Kanas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B75BFE215B1BAF002D6AC3 /* Kanas.framework */; };
-		92B75C20215B26A5002D6AC3 /* KASTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C1F215B26A5002D6AC3 /* KASTestCase.m */; };
-		92B75C24215B29F9002D6AC3 /* KanasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B75C23215B29F9002D6AC3 /* KanasTests.m */; };
 		92CE126421C3B00F009DAD6F /* KASInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CE126221C3B00F009DAD6F /* KASInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92CE126521C3B00F009DAD6F /* KASInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CE126321C3B00F009DAD6F /* KASInterpreter.m */; };
+		C5B2D386E4381847B1F47E44 /* libPods-Kanas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FB8312B2B0C550C7269A36 /* libPods-Kanas.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3BF9BEA911C4C0178FF7D60D /* Pods-Kanas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kanas/Pods-Kanas.release.xcconfig"; sourceTree = "<group>"; };
-		408A8EB981EEB31D30055F66 /* Pods-Kanas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kanas/Pods-Kanas.debug.xcconfig"; sourceTree = "<group>"; };
-		40DAD285DF30AEF7938E9F6A /* libPods-Kanas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50116321BDE848E82193C077 /* Pods-KanasTests iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanasTests iOS/Pods-KanasTests iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		23FB8312B2B0C550C7269A36 /* libPods-Kanas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D51125D59066DE7A240435A /* libPods-KanasTests-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanasTests-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929646F921A3B10B000B5FB0 /* req.kas */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = req.kas; sourceTree = "<group>"; };
 		9296470221A3BA82000B5FB0 /* KASAnnotationRemover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASAnnotationRemover.h; sourceTree = "<group>"; };
 		9296470321A3BA82000B5FB0 /* KASAnnotationRemover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASAnnotationRemover.m; sourceTree = "<group>"; };
@@ -59,8 +56,10 @@
 		92B75C23215B29F9002D6AC3 /* KanasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanasTests.m; sourceTree = "<group>"; };
 		92CE126221C3B00F009DAD6F /* KASInterpreter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KASInterpreter.h; sourceTree = "<group>"; };
 		92CE126321C3B00F009DAD6F /* KASInterpreter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KASInterpreter.m; sourceTree = "<group>"; };
-		9FDD049FB83E8332E76AFDCC /* libPods-KanasTests iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanasTests iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B665C63DC127D5AC9C25F4E0 /* Pods-KanasTests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanasTests iOS/Pods-KanasTests iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A5EB4C1B9F0F0709B2920075 /* Pods-Kanas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanas.debug.xcconfig"; path = "Target Support Files/Pods-Kanas/Pods-Kanas.debug.xcconfig"; sourceTree = "<group>"; };
+		B978B251E3799A878E382E40 /* Pods-KanasTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests-iOS.debug.xcconfig"; path = "Target Support Files/Pods-KanasTests-iOS/Pods-KanasTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F0F87F5F77DF7FF5BE14EE /* Pods-Kanas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanas.release.xcconfig"; path = "Target Support Files/Pods-Kanas/Pods-Kanas.release.xcconfig"; sourceTree = "<group>"; };
+		D8C89B82DF9A2B17B18B9CCB /* Pods-KanasTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanasTests-iOS.release.xcconfig"; path = "Target Support Files/Pods-KanasTests-iOS/Pods-KanasTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D5F7177B9D5E51CB9D168A4 /* libPods-Kanas.a in Frameworks */,
+				C5B2D386E4381847B1F47E44 /* libPods-Kanas.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,31 +76,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B75C18215B201A002D6AC3 /* Kanas.framework in Frameworks */,
-				87D0A2F76FE39C9AECBBDC84 /* libPods-KanasTests iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D38EEC7B913BC1BBB6F8B45 /* Frameworks */ = {
+		5EB96659C5AA23D525C38867 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40DAD285DF30AEF7938E9F6A /* libPods-Kanas.a */,
-				9FDD049FB83E8332E76AFDCC /* libPods-KanasTests iOS.a */,
+				A5EB4C1B9F0F0709B2920075 /* Pods-Kanas.debug.xcconfig */,
+				D5F0F87F5F77DF7FF5BE14EE /* Pods-Kanas.release.xcconfig */,
+				B978B251E3799A878E382E40 /* Pods-KanasTests-iOS.debug.xcconfig */,
+				D8C89B82DF9A2B17B18B9CCB /* Pods-KanasTests-iOS.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		26E568555E4F6C6A5045649A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				408A8EB981EEB31D30055F66 /* Pods-Kanas.debug.xcconfig */,
-				3BF9BEA911C4C0178FF7D60D /* Pods-Kanas.release.xcconfig */,
-				50116321BDE848E82193C077 /* Pods-KanasTests iOS.debug.xcconfig */,
-				B665C63DC127D5AC9C25F4E0 /* Pods-KanasTests iOS.release.xcconfig */,
-			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		92058984220518F6006FAADA /* Core */ = {
@@ -159,8 +148,8 @@
 				92B75C0C215B1EA4002D6AC3 /* Tests */,
 				92B75C09215B1C6F002D6AC3 /* Supporting Files */,
 				92B75BFF215B1BAF002D6AC3 /* Products */,
-				26E568555E4F6C6A5045649A /* Pods */,
-				1D38EEC7B913BC1BBB6F8B45 /* Frameworks */,
+				5EB96659C5AA23D525C38867 /* Pods */,
+				DEC4172BB57414AAAF2DA211 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +231,15 @@
 			path = Interpreter;
 			sourceTree = "<group>";
 		};
+		DEC4172BB57414AAAF2DA211 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FB8312B2B0C550C7269A36 /* libPods-Kanas.a */,
+				5D51125D59066DE7A240435A /* libPods-KanasTests-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,7 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B75C06215B1BAF002D6AC3 /* Build configuration list for PBXNativeTarget "Kanas" */;
 			buildPhases = (
-				C8ADB6454BCA00FDBE20AAE6 /* [CP] Check Pods Manifest.lock */,
+				9DAA459B3BBDD7F8F168CA6F /* [CP] Check Pods Manifest.lock */,
 				92B75BF9215B1BAF002D6AC3 /* Headers */,
 				92B75BFA215B1BAF002D6AC3 /* Sources */,
 				92B75BFB215B1BAF002D6AC3 /* Frameworks */,
@@ -284,7 +282,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B75C1B215B201A002D6AC3 /* Build configuration list for PBXNativeTarget "KanasTests iOS" */;
 			buildPhases = (
-				F73D38583CA07BA2C433A2AA /* [CP] Check Pods Manifest.lock */,
 				92B75C0F215B2019002D6AC3 /* Sources */,
 				92B75C10215B2019002D6AC3 /* Frameworks */,
 				92B75C11215B2019002D6AC3 /* Resources */,
@@ -353,36 +350,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C8ADB6454BCA00FDBE20AAE6 /* [CP] Check Pods Manifest.lock */ = {
+		9DAA459B3BBDD7F8F168CA6F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Kanas-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F73D38583CA07BA2C433A2AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KanasTests iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -408,8 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B75C24215B29F9002D6AC3 /* KanasTests.m in Sources */,
-				92B75C20215B26A5002D6AC3 /* KASTestCase.m in Sources */,
+				92350C6B228A579600773299 /* KanasTests.m in Sources */,
+				92350C6A228A579300773299 /* KASTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +527,7 @@
 		};
 		92B75C07215B1BAF002D6AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 408A8EB981EEB31D30055F66 /* Pods-Kanas.debug.xcconfig */;
+			baseConfigurationReference = A5EB4C1B9F0F0709B2920075 /* Pods-Kanas.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -571,7 +554,7 @@
 		};
 		92B75C08215B1BAF002D6AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BF9BEA911C4C0178FF7D60D /* Pods-Kanas.release.xcconfig */;
+			baseConfigurationReference = D5F0F87F5F77DF7FF5BE14EE /* Pods-Kanas.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -597,7 +580,6 @@
 		};
 		92B75C1C215B201A002D6AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50116321BDE848E82193C077 /* Pods-KanasTests iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -619,7 +601,6 @@
 		};
 		92B75C1D215B201A002D6AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B665C63DC127D5AC9C25F4E0 /* Pods-KanasTests iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
